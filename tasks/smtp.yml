@@ -1,7 +1,8 @@
 ---
 # tasks file for example
-
-- name: Install IIS (Web-Server only)
+---
+- hosts: all
+  name: Install IIS (Web-Server only)
   ansible.windows.win_feature:
     name: Web-Server
     state: present
